@@ -1,0 +1,16 @@
+type,number,name,reference
+epic,1,name_epic1,-
+epic,2,name_epic2,-
+epic,3,name_epic3,-
+story,4,name_story4,1
+story,5,name_story5,2
+story,6,name_story6,3
+task,7,name_task7,4
+task,8,name_task8,4
+task,9,name_task9,6
+enhancement,10,name_enhancement10,-
+enhancement,11,name_enhancement11,5
+enhancement,12,name_enhancement12,2
+bug,13,name_bug13,-
+bug,14,name_bug14,-
+bug,15,name_bug15,-

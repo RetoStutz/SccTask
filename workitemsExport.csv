@@ -1,0 +1,236 @@
+ID,Title,Priority,Planned In,Status,Created,Type,Linked Work Items,_polarion
+SCC-13359,SIS Dog Verklingung im Polarion kaputt,Medium,,New,2023-02-01 13:12,Bug Report,,SCC_Polarion/SCC-13359
+SCC-13186,Anpassung Validierung SW,Medium,,Open,2023-01-30 17:50,Task,implements: SCC-12364,SCC_Polarion/SCC-13186
+SCC-13185,Anpassung Dokument Sicherheitsfunktionen,Medium,,Open,2023-01-30 17:50,Task,implements: SCC-12364,SCC_Polarion/SCC-13185
+SCC-13184,Vergleich der Dokumente,Medium,,Open,2023-01-30 16:18,Task,implements: SCC-13183,SCC_Polarion/SCC-13184
+SCC-13183,Vergleich der Bedienkonzepte,Lowest,,Accepted,2023-01-30 16:18,User Story,"specifies: SCC-13168, is implemented by: SCC-13184",SCC_Polarion/SCC-13183
+SCC-13182,Überarbeitung nach Review und Freigabe,Medium,,Open,2023-01-30 16:14,Task,implements: SCC-13178,SCC_Polarion/SCC-13182
+SCC-13181,Review,Medium,,Open,2023-01-30 16:14,Task,implements: SCC-13178,SCC_Polarion/SCC-13181
+SCC-13180,Anpassung Dokumentation,Medium,,Open,2023-01-30 16:14,Task,implements: SCC-13178,SCC_Polarion/SCC-13180
+SCC-13179,Meeting Abgleich der Bedienungen,Medium,,Open,2023-01-30 16:14,Task,implements: SCC-13178,SCC_Polarion/SCC-13179
+SCC-13178,Abgleich Bedienung,Lowest,,Accepted,2023-01-30 16:13,User Story,"specifies: SCC-13168, is implemented by: SCC-13179, is implemented by: SCC-13180, is implemented by: SCC-13181, is implemented by: SCC-13182",SCC_Polarion/SCC-13178
+SCC-13177,Überarbeitung nach Review und Freigabe,Medium,,Open,2023-01-30 16:06,Task,implements: SCC-13167,SCC_Polarion/SCC-13177
+SCC-13176,Review,Medium,,Open,2023-01-30 16:05,Task,implements: SCC-13167,SCC_Polarion/SCC-13176
+SCC-13175,Anpassung Dokumentation,Medium,,Open,2023-01-30 16:05,Task,implements: SCC-13167,SCC_Polarion/SCC-13175
+SCC-13174,Meeting Abgleich Farben,Medium,,Open,2023-01-30 16:05,Task,implements: SCC-13167,SCC_Polarion/SCC-13174
+SCC-13173,Überarbeitung nach Review,Medium,,Open,2023-01-30 16:04,Task,implements: SCC-13169,SCC_Polarion/SCC-13173
+SCC-13172,Review,Medium,,Open,2023-01-30 16:04,Task,implements: SCC-13169,SCC_Polarion/SCC-13172
+SCC-13171,Anpassung Dokumentation,Medium,,Open,2023-01-30 16:03,Task,implements: SCC-13169,SCC_Polarion/SCC-13171
+SCC-13170,Meeting Abgleich Symbolik,Medium,,Open,2023-01-30 16:02,Task,implements: SCC-13169,SCC_Polarion/SCC-13170
+SCC-13169,Abgleich Symbole,Lowest,,Accepted,2023-01-30 15:43,User Story,"specifies: SCC-13168, is implemented by: SCC-13170, is implemented by: SCC-13172, is implemented by: SCC-13173, is implemented by: SCC-13171",SCC_Polarion/SCC-13169
+SCC-13168,Abgleich Bedienkonzept SCC und SCS,Highest,,Accepted,2023-01-30 15:36,Epic,"is specified by: SCC-13167, is specified by: SCC-13169, is specified by: SCC-13178, is specified by: SCC-13183",SCC_Polarion/SCC-13168
+SCC-13167,Farbkozept zwischen SCC und SCS abgleichen,Lowest,,Accepted,2023-01-30 15:30,User Story,"specifies: SCC-13168, is related to: SCC-12513, is implemented by: SCC-13174, is implemented by: SCC-13176, is implemented by: SCC-13177, is implemented by: SCC-13175",SCC_Polarion/SCC-13167
+SCC-13166,Joystick_activ wird nicht zurückgesetzt!,Medium,,In Progress,2023-01-30 12:12,Bug Report,,SCC_Polarion/SCC-13166
+SCC-13165,magic numbers statt Anwenderkonstanten im yHoist01,Medium,,New,2023-01-30 11:42,Bug Report,,SCC_Polarion/SCC-13165
+SCC-13164,Kapitel in Bedienkonzept und Betriebsanleitung angleichen,Medium,,Open,2023-01-30 10:02,Task,implements: SCC-12957,SCC_Polarion/SCC-13164
+SCC-13122,DataLogging,Lowest,,New,2023-01-27 09:22,Enhancement Request,,SCC_Polarion/SCC-13122
+SCC-13121,Anleitung Schleppketten Auslegung,Lowest,,New,2023-01-25 09:57,Enhancement Request,,SCC_Polarion/SCC-13121
+SCC-13109,Einspeise Box 400V vorlage RBG,Lowest,,New,2023-01-25 10:07,Enhancement Request,,SCC_Polarion/SCC-13109
+SCC-12960,Überarbeitung nach Review und Freigabe,Medium,,Open,2023-01-24 07:58,Task,implements: SCC-12957,SCC_Polarion/SCC-12960
+SCC-12959,Review,Medium,,Open,2023-01-24 07:58,Task,implements: SCC-12957,SCC_Polarion/SCC-12959
+SCC-12958,Überarbeitng des Dokumentes,Medium,,Open,2023-01-24 07:57,Task,implements: SCC-12957,SCC_Polarion/SCC-12958
+SCC-12957,Betriebsanleitung an Ausführungsspez angleichen,Lowest,,Accepted,2023-01-24 07:57,User Story,"specifies: SCC-12952, is implemented by: SCC-12958, is implemented by: SCC-12959, is implemented by: SCC-12960, is implemented by: SCC-13164",SCC_Polarion/SCC-12957
+SCC-12956,Überarbeitung nach Review und Freigabe,Medium,,Open,2023-01-23 16:39,Task,implements: SCC-12953,SCC_Polarion/SCC-12956
+SCC-12955,Review,Medium,,Open,2023-01-23 16:39,Task,implements: SCC-12953,SCC_Polarion/SCC-12955
+SCC-12954,fehlende Kapitel erstellen,Medium,,Open,2023-01-23 16:39,Task,implements: SCC-12953,SCC_Polarion/SCC-12954
+SCC-12953,Schnittstelle und Remote Zugang / Fernwartung in Ausführungsspezifikation implementieren,Lowest,,Accepted,2023-01-23 16:38,User Story,"specifies: SCC-12952, is implemented by: SCC-12954, is implemented by: SCC-12956, is implemented by: SCC-12955",SCC_Polarion/SCC-12953
+SCC-12952,"Abgleich GU-Angebotstext, Ausführungsspezifikation, Betriebsanleitung SCC / SCS",Highest,,Accepted,2023-01-23 16:32,Epic,"is specified by: SCC-12953, is specified by: SCC-12957",SCC_Polarion/SCC-12952
+SCC-12725,Sonderposition EP/AP Verarbeitung funktioniert nicht,Medium,,New,2023-01-19 18:09,Bug Report,,SCC_Polarion/SCC-12725
+SCC-12724,Überarbeitung GU-Angebotstext,Lowest,,Draft,2023-01-19 18:04,User Story,specifies: SCC-1871,SCC_Polarion/SCC-12724
+SCC-12723,SPS Komentare mit,Medium,,Assigned to Submitter,2023-01-19 16:40,Bug Report,,SCC_Polarion/SCC-12723
+SCC-12709,Überarbeitung SCC - SCS Kommunikation,Lowest,,New,2023-01-17 10:30,Enhancement Request,,SCC_Polarion/SCC-12709
+SCC-12708,HMI um Subkonfig erweitern,Medium,,Assigned to Submitter,2023-01-16 17:32,Bug Report,,SCC_Polarion/SCC-12708
+SCC-12707,Geschwindigkeitsauswahl auf Ebene Axis/SwrIf,Lowest,,New,2023-01-13 07:49,Enhancement Request,,SCC_Polarion/SCC-12707
+SCC-12685,"Green-, GentleDrive verfälscht Offset",Medium,,New,2023-01-12 08:57,Bug Report,,SCC_Polarion/SCC-12685
+SCC-12684,"Ein-, Ausschalten Bedienort gibt VÜberwachung",Medium,,New,2023-01-12 08:46,Bug Report,,SCC_Polarion/SCC-12684
+SCC-12683,InPosition- Prüfung im falschen Part,Medium,,New,2023-01-12 08:42,Bug Report,,SCC_Polarion/SCC-12683
+SCC-12682,Stopp In Pos Bedämpfung für X,Medium,,New,2023-01-12 08:08,Bug Report,,SCC_Polarion/SCC-12682
+SCC-12681,ElSwrIf tMototTurning keine Temp Variabel,Medium,,New,2023-01-12 08:07,Bug Report,,SCC_Polarion/SCC-12681
+SCC-12680,Spitzfahrtvermeidung führt zu Schleichen,Medium,,New,2023-01-12 08:05,Bug Report,,SCC_Polarion/SCC-12680
+SCC-12635,Simulation: Fehler 055_TimeoutAgree löst falsch aus,Medium,,New,2023-01-10 17:14,Bug Report,,SCC_Polarion/SCC-12635
+SCC-12634,"Testbetrieb wird zuende gefahren, auch wenn Zustimmtaster losgelassen wird",Medium,,New,2023-01-10 16:55,Bug Report,,SCC_Polarion/SCC-12634
+SCC-12633,Cybersicherheit,Lowest,"Sprint 3, SCC 2.108.0",Draft,2023-01-09 17:39,User Story,specifies: SCC-12109,SCC_Polarion/SCC-12633
+SCC-12631,ePlan von 'Version 2.9' Hochziehen auf 'Plattform 2023',Lowest,,New,2023-01-04 13:00,Enhancement Request,relates to: SCS-31068,SCC_Polarion/SCC-12631
+SCC-12544,Safety Simulation Y-Bremsschütz nicht simuliert,Medium,,In Progress,2022-12-16 11:07,Bug Report,,SCC_Polarion/SCC-12544
+SCC-12543,Doppel LAM,Highest,,Draft,2022-12-15 15:07,Epic,,SCC_Polarion/SCC-12543
+SCC-12540,Spitzfahrt vmin anstatt PosLow,Medium,,New,2022-12-15 08:08,Bug Report,,SCC_Polarion/SCC-12540
+SCC-12539,Überarbeitung und Freigabe: Neues Typical für Doppeltiefe erstellt,Medium,,Open,2022-12-14 18:08,Task,implements: SCC-12536,SCC_Polarion/SCC-12539
+SCC-12538,Review: Neues Typical für Doppeltiefe erstellt,Medium,,Open,2022-12-14 18:08,Task,implements: SCC-12536,SCC_Polarion/SCC-12538
+SCC-12537,Dokumentation erstellen: Neues Typical für Doppeltiefe erstellt,Medium,,Open,2022-12-14 18:07,Task,implements: SCC-12536,SCC_Polarion/SCC-12537
+SCC-12536,Neues Typical für Doppeltiefe erstellt,Lowest,,Draft,2022-12-14 17:53,User Story,"specifies: SCC-12535, is implemented by: SCC-12539, is implemented by: SCC-12538, is implemented by: SCC-12537",SCC_Polarion/SCC-12536
+SCC-12535,Doppeltiefe,Highest,,Accepted,2022-12-14 17:52,Epic,is specified by: SCC-12536,SCC_Polarion/SCC-12535
+SCC-12534,Ersatz SMS 2000 Standalone,Lowest,,Draft,2022-12-14 17:05,User Story,"specifies: SCC-11883, relates to: SCC-12357, is related to: SCC-9132",SCC_Polarion/SCC-12534
+SCC-12533,Ersatz SMS 2000 mit MoviC,Lowest,,Draft,2022-12-14 17:01,User Story,"specifies: SCC-11883, relates to: SCC-12357, is related to: SCC-9132",SCC_Polarion/SCC-12533
+SCC-12532,Kickoff : Anleitung ePlan Macros,Medium,,Open,2022-12-14 10:47,Task,implements: SCC-10154,SCC_Polarion/SCC-12532
+SCC-12531,Überarbeitung nach zweitem Review und Freigabe: Anleitung E-Plan Prozess,Medium,,Open,2022-12-14 10:42,Task,implements: SCC-10155,SCC_Polarion/SCC-12531
+SCC-12530,Zweites Review: Anleitung E-Plan Prozess,Medium,,Open,2022-12-14 10:41,Task,implements: SCC-10155,SCC_Polarion/SCC-12530
+SCC-12529,Überbrückung wird gehalten,Medium,,In Progress,2022-12-14 09:25,Bug Report,is related to: SCS-32028,SCC_Polarion/SCC-12529
+SCC-12528,Überarbeitung nach Review: Review Schema,Medium,,Open,2022-12-12 07:00,Task,implements: SCC-12525,SCC_Polarion/SCC-12528
+SCC-12527,Überprüfung der Daten: Review Schema,Medium,,Open,2022-12-12 06:58,Task,implements: SCC-12525,SCC_Polarion/SCC-12527
+SCC-12526,Funktionale Überprüfung: Review Schema,Medium,,Open,2022-12-12 06:56,Task,implements: SCC-12525,SCC_Polarion/SCC-12526
+SCC-12525,Review Schema,Lowest,"Sprint 2, Sprint 3, SCC 2.108.0",Draft,2022-12-12 06:55,User Story,"specifies: SCC-2577, is implemented by: SCC-12527, is implemented by: SCC-12526, is implemented by: SCC-12528",SCC_Polarion/SCC-12525
+SCC-12517,Überarbeitung nach Review: GU Angebotstext für Retrofit,Medium,,Open,2022-12-05 14:04,Task,implements: SCC-12514,SCC_Polarion/SCC-12517
+SCC-12516,Review: GU Angebotstext für Retrofit,Medium,,Open,2022-12-05 14:04,Task,implements: SCC-12514,SCC_Polarion/SCC-12516
+SCC-12515,Erstellen: GU Angebotstext für Retrofi,Medium,,Open,2022-12-05 14:03,Task,implements: SCC-12514,SCC_Polarion/SCC-12515
+SCC-12514,GU Angebotstext für Retrofit,Lowest,,Draft,2022-12-05 14:00,User Story,"specifies: SCC-1871, is implemented by: SCC-12515, is implemented by: SCC-12517, is implemented by: SCC-12516",SCC_Polarion/SCC-12514
+SCC-12512,URL-Adressen für Kamera über Variable vorgeben,Lowest,,Accepted,2022-12-01 14:40,Enhancement Request,relates to: SCC-12510,SCC_Polarion/SCC-12512
+SCC-12511,Design im 031_DurTest noch das alte,Medium,,New,2022-12-01 14:14,Bug Report,,SCC_Polarion/SCC-12511
+SCC-12510,Button Z-Tiefe 2 in 030_OpTest,Lowest,,Accepted,2022-12-01 13:30,Enhancement Request,is related to: SCC-12512,SCC_Polarion/SCC-12510
+SCC-12509,gefunden im Release 2.107: im Panel 020_OpMan - die X+/Y--Taste hat ne andere Hö...,Medium,,New,2022-12-01 12:00,Bug Report,,SCC_Polarion/SCC-12509
+SCC-12508,Durchschalten der EP- und AP-Positionen im Panel,Medium,,New,2022-12-01 10:56,Bug Report,,SCC_Polarion/SCC-12508
+SCC-12498,SCC Schnittstellesignalen über AS-AS zu SCS Anlagen sollten über einzelne Status UDT ausgetauscht werden,Medium,,New,2022-11-25 13:11,Bug Report,,SCC_Polarion/SCC-12498
+SCC-12448,Bereichslängenfehler xChassisReadPos,Medium,,New,2022-11-16 08:47,Bug Report,,SCC_Polarion/SCC-12448
+SCC-12379,Überarbeitung nach Review und Freigabe,Medium,,Open,2022-11-14 13:08,Task,implements: SCC-12376,SCC_Polarion/SCC-12379
+SCC-12378,Review,Medium,,Open,2022-11-14 13:08,Task,implements: SCC-12376,SCC_Polarion/SCC-12378
+SCC-12377,Erstellen,Medium,,Open,2022-11-14 13:08,Task,implements: SCC-12376,SCC_Polarion/SCC-12377
+SCC-12376,Anpassung SW,Lowest,,Accepted,2022-11-14 13:08,User Story,"specifies: SCC-12356, is implemented by: SCC-12379, is implemented by: SCC-12377, is implemented by: SCC-12378",SCC_Polarion/SCC-12376
+SCC-12375,Überarbeitung nach Review und Freigabe,Medium,,Open,2022-11-14 13:05,Task,implements: SCC-12372,SCC_Polarion/SCC-12375
+SCC-12374,Review,Medium,,Open,2022-11-14 13:04,Task,implements: SCC-12372,SCC_Polarion/SCC-12374
+SCC-12373,Erstellen,Medium,,Open,2022-11-14 13:04,Task,implements: SCC-12372,SCC_Polarion/SCC-12373
+SCC-12372,Anpassungen im Schema,Lowest,,Accepted,2022-11-14 13:04,User Story,"specifies: SCC-12356, is implemented by: SCC-12374, is implemented by: SCC-12373, is implemented by: SCC-12375",SCC_Polarion/SCC-12372
+SCC-12371,Anpassung nach Review und Freigabe,Medium,,Open,2022-11-14 13:02,Task,implements: SCC-12368,SCC_Polarion/SCC-12371
+SCC-12370,Revew,Medium,,In Progress,2022-11-14 13:01,Task,implements: SCC-12368,SCC_Polarion/SCC-12370
+SCC-12368,Anpassen Elm Subsysteme,Lowest,"Sprint 3, SCC 2.108.0",In Progress,2022-11-14 13:01,User Story,"specifies: SCC-12356, is implemented by: SCC-12371, is implemented by: SCC-12369, is implemented by: SCC-12370",SCC_Polarion/SCC-12368
+SCC-12367,Überarbeitung nach Review und Freigabe,Medium,,Open,2022-11-14 12:55,Task,implements: SCC-12364,SCC_Polarion/SCC-12367
+SCC-12366,Review,Medium,,In Progress,2022-11-14 12:54,Task,implements: SCC-12364,SCC_Polarion/SCC-12366
+SCC-12364,Anpassung Sicherheitskonzept,Lowest,"Sprint 3, SCC 2.108.0",Accepted,2022-11-14 12:54,User Story,"specifies: SCC-12356, is implemented by: SCC-13185, is implemented by: SCC-13186, is implemented by: SCC-12367, is implemented by: SCC-12365, is implemented by: SCC-12366",SCC_Polarion/SCC-12364
+SCC-12363,Überarbeiten und Freigeben,Medium,,Open,2022-11-14 12:50,Task,implements: SCC-12360,SCC_Polarion/SCC-12363
+SCC-12362,Review,Medium,,In Progress,2022-11-14 12:50,Task,implements: SCC-12360,SCC_Polarion/SCC-12362
+SCC-12360,Beschreibung Antriebskonzept,Lowest,"Sprint 3, SCC 2.108.0",Accepted,2022-11-14 12:49,User Story,"specifies: SCC-12356, is implemented by: SCC-12363, is implemented by: SCC-12362, is implemented by: SCC-12361",SCC_Polarion/SCC-12360
+SCC-12356,Sichere Geschwindigkeit,Highest,,In Progress,2022-11-14 11:30,Epic,"relates to: SCC-11883, is specified by: SCC-12376, is specified by: SCC-12372, is specified by: SCC-12360, is specified by: SCC-12364, is specified by: SCC-12368, is specified by: SCC-12357",SCC_Polarion/SCC-12356
+SCC-12355,Eplan Aufbaupläne,Lowest,,Accepted,2022-11-10 14:02,Enhancement Request,,SCC_Polarion/SCC-12355
+SCC-12354,+11 +12 LAM Bedienung,Lowest,,Accepted,2022-11-10 13:59,Enhancement Request,,SCC_Polarion/SCC-12354
+SCC-12112,Anleitung ePlan Macros: Implementation nach Review,Medium,,Open,2022-11-03 09:29,Task,implements: SCC-10154,SCC_Polarion/SCC-12112
+SCC-12111,Anleitung ePlan Macros: Review,Medium,,Open,2022-11-03 09:29,Task,implements: SCC-10154,SCC_Polarion/SCC-12111
+SCC-12110,Anleitung ePlan Macros: Erstellen,Medium,,In Progress,2022-11-03 09:29,Task,implements: SCC-10154,SCC_Polarion/SCC-12110
+SCC-12109,TIA V18,Highest,,In Progress,2022-11-02 12:58,Epic,"is specified by: SCC-12633, is related to: SCC-7340, is related to: SCC-6713, is specified by: SCC-12518",SCC_Polarion/SCC-12109
+SCC-12108,SCC im grösseren Kontext,Highest,,Draft,2022-11-02 11:25,Epic,,SCC_Polarion/SCC-12108
+SCC-12107,PTC Mechanik,Highest,,Draft,2022-11-02 11:19,Epic,is related to: SCC-11861,SCC_Polarion/SCC-12107
+SCC-11883,Neue Norm,Highest,,In Progress,2022-10-26 21:12,Epic,"is related to: SCC-6697, is related to: SCC-9132, is related to: SCC-9220, is related to: SCC-9217, is related to: SCC-9214, is related to: SCC-9222, is related to: SCC-9218, is related to: SCC-9530, is related to: SCC-6698, is related to: SCC-6699, is related to: SCC-6696, is related to: SCC-6677, is related to: SCC-6701, is related to: SCC-6702, is related to: SCC-6700, is related to: SCC-6385, is related to: SCC-12356, is specified by: SCC-12533, is specified by: SCC-12534",SCC_Polarion/SCC-11883
+SCC-11865,LR Telegramm in Standard einbauen,Lowest,,Assigned to Submitter,2022-10-26 11:56,Enhancement Request,,SCC_Polarion/SCC-11865
+SCC-11861,Prdoukt erweitern auf PTC Mechanik,Lowest,,Accepted,2022-10-26 11:02,Enhancement Request,relates to: SCC-12107,SCC_Polarion/SCC-11861
+SCC-11745,Schulungshemen Modul 1 definieren,Lowest,"SCC 2.107.0, Sprint 4, Sprint 1, SCC 2.108.0",In Progress,2022-10-13 15:38,User Story,"specifies: SCC-6657, is implemented by: SCC-11746, is implemented by: SCC-11748, is implemented by: SCC-11747",SCC_Polarion/SCC-11745
+SCC-11554,Excel Sheet Berechnung FEM Positionen,Lowest,,Accepted,2022-10-05 11:34,Enhancement Request,,SCC_Polarion/SCC-11554
+SCC-11488,Funktionaler Test der Gabelmitte verbessern,Lowest,,Accepted,2022-09-28 13:45,Enhancement Request,,SCC_Polarion/SCC-11488
+SCC-11322,Panelbilder - Placement Differences,Lowest,,Accepted,2022-09-13 14:06,Enhancement Request,relates to: SCC-9653,SCC_Polarion/SCC-11322
+SCC-11215,Anpassen nach erstem Review,Medium,,Open,2022-09-07 12:48,Task,implements: SCC-10155,SCC_Polarion/SCC-11215
+SCC-11214,Erstes grobes Review,Medium,,Open,2022-09-07 12:47,Task,implements: SCC-10155,SCC_Polarion/SCC-11214
+SCC-11212,Dokument verlinken,Medium,,Open,2022-09-07 12:39,Task,implements: SCC-10156,SCC_Polarion/SCC-11212
+SCC-11211,Störmeldeliste Aufräumen,Lowest,,Accepted,2022-09-07 11:44,Enhancement Request,,SCC_Polarion/SCC-11211
+SCC-11192,OWL +11 LAM Profinet,Lowest,,Accepted,2022-09-07 08:15,User Story,,SCC_Polarion/SCC-11192
+SCC-11174,Visio Darstellung der kompletten Softwarestruktur vom SCC,Lowest,,Accepted,2022-09-06 08:52,Enhancement Request,,SCC_Polarion/SCC-11174
+SCC-11171,Anpassen und Freigeben,Medium,,Open,2022-08-31 21:47,Task,implements: SCC-11127,SCC_Polarion/SCC-11171
+SCC-11144,TuType Aus dem Auftrag muss auf Elementebene einsehbar sein,Lowest,,Accepted,2022-08-29 09:49,Enhancement Request,,SCC_Polarion/SCC-11144
+SCC-11132,Panel Erweiterungen Hand mit Kamera und kein Kameraminibild,Lowest,,Accepted,2022-08-25 14:31,Enhancement Request,relates to: SCC-9653,SCC_Polarion/SCC-11132
+SCC-11129,"GenTele, Generierung Teleaufträge RBG intern",Lowest,,Accepted,2022-08-25 14:07,Enhancement Request,,SCC_Polarion/SCC-11129
+SCC-11128,Stoppfunktion,Lowest,,Accepted,2022-08-25 14:03,Enhancement Request,,SCC_Polarion/SCC-11128
+SCC-11127,Inforamtion zu Produkteigenschaften,Low,"SCC 2.107.0, Sprint 4, Sprint 1, Sprint 2, Sprint 3, SCC 2.108.0",Accepted,2022-08-25 13:57,User Story,"specifies: SCC-2575, is implemented by: SCC-11170, is implemented by: SCC-11171, is implemented by: SCC-11169",SCC_Polarion/SCC-11127
+SCC-11126,OpTest Symbolisch,Lowest,,Accepted,2022-08-25 13:55,Enhancement Request,relates to: SCC-9653,SCC_Polarion/SCC-11126
+SCC-11125,Dynamische Spezialstörungen,Lowest,,Accepted,2022-08-25 13:51,Enhancement Request,,SCC_Polarion/SCC-11125
+SCC-11116,Anpassen der IO_Liste_Template,Lowest,,Assigned to Submitter,2022-08-23 09:14,Enhancement Request,,SCC_Polarion/SCC-11116
+SCC-10884,Erweiterung Workitem SCC 3827,Lowest,,Accepted,2022-08-11 14:44,Enhancement Request,relates to: SCC-9653,SCC_Polarion/SCC-10884
+SCC-10878,LAM Bild auf Panel überprüfen und anpassen,Medium,,In Progress,2022-07-29 23:20,Task,"relates to: SCC-10875, has follow-up: SCC-10892",SCC_Polarion/SCC-10878
+SCC-10876,HW Konfiguration überprüfen und anpassen,Medium,,Open,2022-07-29 23:14,Task,"relates to: SCC-10875, has follow-up: SCC-10892",SCC_Polarion/SCC-10876
+SCC-10875,Nummerierung der Funktionen in Elementbeschreibung sind nicht nach System Numbering Guideline,Medium,,In Progress,2022-07-29 23:09,Bug Report,"is related to: SCC-10873, is related to: SCC-10870, is related to: SCC-10871, is related to: SCC-10878, is related to: SCC-10876, is related to: SCC-10877, is related to: SCC-10872, is related to: SCC-10881, is related to: SCC-10892, is related to: SCC-10869, is related to: SCC-10879, is related to: SCC-10880",SCC_Polarion/SCC-10875
+SCC-10821,Erstellung eines HMI Stil/Design nach Swisslog Richtlinie,Lowest,,Accepted,2022-07-27 07:55,Enhancement Request,relates to: SCC-9653,SCC_Polarion/SCC-10821
+SCC-10777,Verbesserungsvorschlag Kapitel Leistungsabgrenzung,Lowest,,New,2022-07-13 13:21,Enhancement Request,,SCC_Polarion/SCC-10777
+SCC-10527,Kapitel Absolutwert-Drehgeber in elm Lastaufnahmemittel erfassen,Lowest,,Accepted,2022-06-15 15:12,Enhancement Request,,SCC_Polarion/SCC-10527
+SCC-10526,Joystick: RBG fährt los wenn Analog Karte defekt,Medium,,In Progress,2022-06-15 08:44,Bug Report,,SCC_Polarion/SCC-10526
+SCC-10522,Programierrichtlinien: Region in Englisch,Lowest,,Accepted,2022-06-13 10:06,Enhancement Request,,SCC_Polarion/SCC-10522
+SCC-10521,Dokument: Projektierung Kommunikation,Lowest,,Accepted,2022-06-13 10:03,Enhancement Request,,SCC_Polarion/SCC-10521
+SCC-10519,"DauerTest, JobCycle Beschreibung",Lowest,,Accepted,2022-06-13 09:53,Enhancement Request,,SCC_Polarion/SCC-10519
+SCC-10511,ACP: Number of TU's with info block,Lowest,,Accepted,2022-06-10 12:39,Enhancement Request,is related to: SCC-10518,SCC_Polarion/SCC-10511
+SCC-10510,Lösung für Gabelversatz bei doppelief,Lowest,,Accepted,2022-06-09 18:15,Enhancement Request,,SCC_Polarion/SCC-10510
+SCC-10506,Vorlage Kundenschulung,Lowest,,Accepted,2022-06-02 13:13,Enhancement Request,relates to: SCC-6657,SCC_Polarion/SCC-10506
+SCC-10441,Automatisches Update des Copyright Jahres bei Word Export,Lowest,,Accepted,2022-05-30 11:42,Enhancement Request,is related to: SCC-10335,SCC_Polarion/SCC-10441
+SCC-10437,Grobkonzept für Erneuerung SW Regler,Lowest,,Draft,2022-05-29 23:28,User Story,specifies: SCC-9633,SCC_Polarion/SCC-10437
+SCC-10436,Testplan,Lowest,,Draft,2022-05-29 23:25,User Story,specifies: SCC-9633,SCC_Polarion/SCC-10436
+SCC-10435,Handbetrieb,Lowest,,Draft,2022-05-29 23:20,User Story,specifies: SCC-9633,SCC_Polarion/SCC-10435
+SCC-10434,Positionierbetrieb,Lowest,,Draft,2022-05-29 23:05,User Story,specifies: SCC-9633,SCC_Polarion/SCC-10434
+SCC-10396,Antriebskonzept in Elementbeschreibung einpflegen,Lowest,,Draft,2022-05-25 13:48,User Story,,SCC_Polarion/SCC-10396
+SCC-10359,HMI Benutzerverwaltung - Konzept,Lowest,,Accepted,2022-05-24 16:48,Enhancement Request,relates to: SCC-9653,SCC_Polarion/SCC-10359
+SCC-10339,Safety F03_OpStatus Geschwindigkeitswahl übersichtlicher,Lowest,,Accepted,2022-05-24 15:05,Enhancement Request,,SCC_Polarion/SCC-10339
+SCC-10336,ElSwrInterface01 tError vom DPRD_DAT,Lowest,,Accepted,2022-05-24 14:42,Enhancement Request,,SCC_Polarion/SCC-10336
+SCC-10198,Erweiterung des 2. Kapitels in der SCC Betriebsanleitung,Lowest,,Accepted,2022-05-17 09:25,Enhancement Request,,SCC_Polarion/SCC-10198
+SCC-10156,Spezifikation ePlan Vorlage,Lowest,,Accepted,2022-05-05 16:31,User Story,"specifies: SCC-2577, is implemented by: SCC-11212",SCC_Polarion/SCC-10156
+SCC-10155,Anleitung E-Plan Prozess,Lowest,"Sprint 1, Sprint 2, Sprint 3, SCC 2.108.0",Review,2022-05-05 16:18,User Story,"relates to: SCC-2577, is implemented by: SCC-12530, is implemented by: SCC-12531, is related to: SCC-10154, is implemented by: SCC-11213, is implemented by: SCC-11214, is implemented by: SCC-11215",SCC_Polarion/SCC-10155
+SCC-10154,Anleitung ePlan Macros,Lowest,"Sprint 1, Sprint 2, Sprint 3, SCC 2.108.0",Accepted,2022-05-05 16:16,User Story,"relates to: SCC-10155, is implemented by: SCC-12110, is implemented by: SCC-12112, is implemented by: SCC-12111, is implemented by: SCC-12532",SCC_Polarion/SCC-10154
+SCC-9900,Anpassung Installationsausschreibung SCC,Lowest,,Accepted,2022-05-02 16:10,Enhancement Request,,SCC_Polarion/SCC-9900
+SCC-9898,HMI Bezeichnungschilder mit Grafik Vorlage erstellen,Lowest,,Accepted,2022-04-29 17:27,Enhancement Request,relates to: SCS-23611,SCC_Polarion/SCC-9898
+SCC-9805,Update Dokumentation für F_override,Lowest,,Draft,2022-04-27 19:17,User Story,,SCC_Polarion/SCC-9805
+SCC-9797,HOP Poswerte in Config,Lowest,,Accepted,2022-04-26 11:41,Enhancement Request,,SCC_Polarion/SCC-9797
+SCC-9796,HOP Konfig Modular,Lowest,,Accepted,2022-04-26 11:36,Enhancement Request,,SCC_Polarion/SCC-9796
+SCC-9795,Einmessen der Trägerhöhen/ Optimieren der Y-Positionen des Lagers,Lowest,,Accepted,2022-04-26 09:29,Enhancement Request,,SCC_Polarion/SCC-9795
+SCC-9653,Bedienpanel,Lowest,,In Progress,2022-04-13 20:28,Epic,"is related to: SCC-7958, is related to: SCC-2702, is related to: SCC-6172, is related to: SCC-11126, is related to: SCC-11322, is related to: SCC-11132, is related to: SCC-10884, is related to: SCC-10359, is specified by: SCC-10438, is related to: SCC-10821, is related to: SCC-9635",SCC_Polarion/SCC-9653
+SCC-9633,SW Regler V2,Highest,,In Progress,2022-04-13 16:39,Epic,"is related to: SCC-9649, is related to: SCC-9646, is specified by: SCC-10436, is specified by: SCC-10434, is specified by: SCC-10435, is specified by: SCC-10437",SCC_Polarion/SCC-9633
+SCC-9631,Sichere Kommunikation zu Fremdgewerke,Lowest,,Accepted,2022-04-13 11:09,Epic,"is related to: SCC-9599, is related to: SCC-9603, is related to: SCC-9602, is related to: SCC-9601, is related to: SCC-9600",SCC_Polarion/SCC-9631
+SCC-9603,Wir brauchen eine SW Beschreibung wie viele Sichere Signale von externen Gewerken verarbeitet werden sollen,Lowest,,Draft,2022-04-08 23:57,User Story,relates to: SCC-9631,SCC_Polarion/SCC-9603
+SCC-9602,Wir brauchen eine SW Beschreibung wie vereinzelt Sichere Signale von externen Gewerken verarbeitet werden sollen,Lowest,,Draft,2022-04-08 23:56,User Story,"relates to: SCC-9631, is related to: SCC-6688",SCC_Polarion/SCC-9602
+SCC-9601,Definition wie viele Sicherheitssignale zu anderen Fremdgewerken geteilt werden,Lowest,,Draft,2022-04-08 23:44,User Story,"relates to: SCC-9631, is related to: SCC-9654",SCC_Polarion/SCC-9601
+SCC-9600,Validierung Austuasch von Sicheren Signalen zu Fremdgewerken,Lowest,,Draft,2022-04-08 23:42,User Story,"relates to: SCC-9631, is related to: SCC-6689",SCC_Polarion/SCC-9600
+SCC-9599,Definition wie einzelne Sicherheitssignale zu anderen Fremdgewerken geteilt werden,Lowest,,Draft,2022-04-08 23:31,User Story,"relates to: SCC-9631, is related to: SCC-6687",SCC_Polarion/SCC-9599
+SCC-9595,"Hauptschalter verwenden, welcher sich mit Werkzeug in Position ON öffnen lässt",Lowest,,Draft,2022-04-08 22:38,User Story,is related to: SCC-6675,SCC_Polarion/SCC-9595
+SCC-9594,Option: Leistungsanpassung über SPOC,Lowest,,Draft,2022-04-08 22:15,User Story,is related to: SCC-9553,SCC_Polarion/SCC-9594
+SCC-9593,Option: Leistungsanpassung übers TP,Lowest,,Draft,2022-04-08 22:10,User Story,is related to: SCC-9553,SCC_Polarion/SCC-9593
+SCC-9584,SW Guidelines um Globalen Konstanten ergänzen,Lowest,,Assigned to Submitter,2022-04-05 16:09,Enhancement Request,,SCC_Polarion/SCC-9584
+SCC-9580,Elm. Beschreibung Fahrwerk HW input für DLS,Lowest,,Accepted,2022-04-04 11:15,Enhancement Request,is related to: SCC-9581,SCC_Polarion/SCC-9580
+SCC-9546,Anwendung von Reglerinbetriebnahme am Testmodell schulen,Lowest,,Accepted,2022-03-31 14:18,Enhancement Request,,SCC_Polarion/SCC-9546
+SCC-9530,Pufferüberwachung und 100% Puffer,Medium,,Accepted,2022-03-30 11:06,Enhancement Request,relates to: SCC-11883,SCC_Polarion/SCC-9530
+SCC-9523,Handbücher Produkt,Lowest,,Draft,2022-03-28 09:48,Epic,"is related to: SCC-9902, is specified by: SCC-4889, is specified by: SCC-4890, is specified by: SCC-4891, is related to: SCC-9935, is related to: SCC-9901, is related to: SCC-9903, is specified by: SCC-2318, is specified by: SCC-2319",SCC_Polarion/SCC-9523
+SCC-9357,State einer Statemachine als Konstanten und nicht als Zahl (Magic Number),Lowest,,Accepted,2022-03-10 15:58,Enhancement Request,,SCC_Polarion/SCC-9357
+SCC-9229,"Customized Beschreibung/Deckblatt ""MM-MoveModul/Spezialmodule"" optimieren",Lowest,SCC 2.106.0,stopped,2022-03-07 08:39,User Story,"relates to: SCS-24461, is related to: SCC-6594",SCC_Polarion/SCC-9229
+SCC-9226,SCC According system numbering guideline,Lowest,,Accepted,2022-03-07 07:32,User Story,"specifies: SCC-2577, is implemented by: SCC-9792, is related to: SCC-6167",SCC_Polarion/SCC-9226
+SCC-9223,Schulungsprojekt auf Masterbasis,Lowest,,Draft,2022-03-07 07:28,User Story,"specifies: SCC-6657, is related to: SCC-2656",SCC_Polarion/SCC-9223
+SCC-9220,NORM: Zusätzliche Personen auf dem Hubwagen,Lowest,,Accepted,2022-03-04 18:38,Enhancement Request,relates to: SCC-11883,SCC_Polarion/SCC-9220
+SCC-9218,NORM: 1840 Vorzone [Lagerkopf OG],Lowest,,Accepted,2022-03-04 18:25,Enhancement Request,relates to: SCC-11883,SCC_Polarion/SCC-9218
+SCC-9217,NORM: 1310 LAM [Lastüberhang],Lowest,,Accepted,2022-03-04 18:17,Enhancement Request,relates to: SCC-11883,SCC_Polarion/SCC-9217
+SCC-9214,NORM: 1010 Bedienstelle,Lowest,,Accepted,2022-03-04 16:15,Enhancement Request,"relates to: SCC-11883, is related to: SCC-7008",SCC_Polarion/SCC-9214
+SCC-9155,Erweiterung: Anwenderbeschreibung SEW Antriebssysteme mit einem Kapitel zum Thema MoviMot + MoviDriveC,Lowest,,Accepted,2022-02-21 10:49,Enhancement Request,,SCC_Polarion/SCC-9155
+SCC-7983,Ausschreibung Installation: Formatabgleich mit SCS,Lowest,,Draft,2021-11-07 19:04,User Story,specifies: SCC-6597,SCC_Polarion/SCC-7983
+SCC-7962,Template UserStory,Lowest,,Draft,2021-11-04 18:31,User Story,,SCC_Polarion/SCC-7962
+SCC-7958,Gabelmitte in der Visualisierung anpassen,Medium,,Accepted,2021-11-04 09:21,Enhancement Request,relates to: SCC-9653,SCC_Polarion/SCC-7958
+SCC-7340,Daten auf SD-Karte speichern,Medium,,Accepted,2021-09-30 14:26,Enhancement Request,"relates to: SCC-12109, is related to: SCC-6713",SCC_Polarion/SCC-7340
+SCC-7008,3.	ET200SP fehlersicheres Technologiemodul F-TM Count:,High,,Accepted,2021-08-30 16:44,Enhancement Request,relates to: SCC-9214,SCC_Polarion/SCC-7008
+SCC-7004,Komponentenliste SCC,Medium,,Open,2021-08-13 20:00,Task,,SCC_Polarion/SCC-7004
+SCC-6713,"InitOffset Wert von Laser, nach initialisierung Achse permanent speichern",Highest,,Accepted,2021-07-07 14:32,Enhancement Request,"relates to: SCC-7340, relates to: SCC-12109",SCC_Polarion/SCC-6713
+SCC-6702,NORM: 1660 Gasse [Zaun mit Zutrittstür] Option Notfall-Schlüsselbox,Highest,,Accepted,2021-06-24 08:54,Enhancement Request,relates to: SCC-11883,SCC_Polarion/SCC-6702
+SCC-6701,"NORM: Informationen über Instandhaltung, Reparatur und Störungsbeseitigung",Medium,,Accepted,2021-06-24 08:54,Enhancement Request,relates to: SCC-11883,SCC_Polarion/SCC-6701
+SCC-6700,NORM: Anleitung für Belastungsprüfung,Medium,,Accepted,2021-06-24 08:53,Enhancement Request,relates to: SCC-11883,SCC_Polarion/SCC-6700
+SCC-6699,NORM: Anleitung für Prüfung von Lärm,Medium,,Accepted,2021-06-24 08:52,Enhancement Request,relates to: SCC-11883,SCC_Polarion/SCC-6699
+SCC-6698,NORM: Aufzeichnungen der Prüfung von Überlast,Medium,,Accepted,2021-06-24 08:51,Enhancement Request,relates to: SCC-11883,SCC_Polarion/SCC-6698
+SCC-6697,NORM: 1340 LAM [Durchschubsicherung],Medium,,Accepted,2021-06-24 08:50,Enhancement Request,relates to: SCC-11883,SCC_Polarion/SCC-6697
+SCC-6696,NORM: 1120 Fahrwerk [Endbegrenzungen],Medium,,Accepted,2021-06-24 08:49,Enhancement Request,relates to: SCC-11883,SCC_Polarion/SCC-6696
+SCC-6677,NORM: 1230 Hubwerk [Überlast],Medium,,Accepted,2021-06-09 11:50,Enhancement Request,relates to: SCC-11883,SCC_Polarion/SCC-6677
+SCC-6657,Schulung Produkt,Highest,,In Progress,2021-06-02 09:23,Epic,"is specified by: SCC-9223, is specified by: SCC-1847, is specified by: SCC-1848, is specified by: SCC-6651, is specified by: SCC-6652, is specified by: SCC-6656, is specified by: SCC-6653, is related to: SCC-10506, is specified by: SCC-11745",SCC_Polarion/SCC-6657
+SCC-6656,Schulungsunterlagen ACM,Lowest,,Draft,2021-06-02 09:22,User Story,specifies: SCC-6657,SCC_Polarion/SCC-6656
+SCC-6655,Implement: Produktpräsentation SW,Medium,,Open,2021-06-02 09:22,Task,implements: SCC-6653,SCC_Polarion/SCC-6655
+SCC-6654,Implement: Produktpräsentation HW,Medium,,Open,2021-06-02 09:21,Task,implements: SCC-6653,SCC_Polarion/SCC-6654
+SCC-6653,Produktpräsentation,Medium,,Draft,2021-06-02 09:21,User Story,"specifies: SCC-6657, is implemented by: SCC-6655, is implemented by: SCC-6654",SCC_Polarion/SCC-6653
+SCC-6652,Schulungsunterlagen Support,Lowest,,Draft,2021-06-02 09:20,User Story,specifies: SCC-6657,SCC_Polarion/SCC-6652
+SCC-6651,Schulungsunterlagen SW-Engineer,Lowest,,Draft,2021-06-02 09:20,User Story,specifies: SCC-6657,SCC_Polarion/SCC-6651
+SCC-6597,Ausschreibung Elektroinstallation,High,,Draft,2021-06-02 07:55,Epic,"is specified by: SCC-7979, is specified by: SCC-7983, is specified by: SCC-7980",SCC_Polarion/SCC-6597
+SCC-6531,LocationRequest,Medium,,Accepted,2021-05-17 14:16,Enhancement Request,,SCC_Polarion/SCC-6531
+SCC-6385,NORM: Beschreibung für Testfall Fangbremse,Medium,,Accepted,2021-04-30 15:06,Enhancement Request,relates to: SCC-11883,SCC_Polarion/SCC-6385
+SCC-6172,HMI Strukturüberarbeitung,High,,Accepted,2021-03-22 13:51,Enhancement Request,relates to: SCC-9653,SCC_Polarion/SCC-6172
+SCC-6171,Option: Condition Monitoring als TP Optionspacket für standard erstellen,Low,,Accepted,2021-03-22 13:22,Enhancement Request,,SCC_Polarion/SCC-6171
+SCC-6170,Profinet Devicenamen,Low,,Accepted,2021-03-19 13:26,Enhancement Request,,SCC_Polarion/SCC-6170
+SCC-4891,Projektierungs-Handbuch HW,Medium,,Draft,2020-11-26 10:10,User Story,specifies: SCC-9523,SCC_Polarion/SCC-4891
+SCC-4890,Inbetriebnahme-Handbuch HW,Medium,,Draft,2020-11-26 10:10,User Story,specifies: SCC-9523,SCC_Polarion/SCC-4890
+SCC-4889,Handbuch Allgemein,Medium,,Draft,2020-11-26 10:09,User Story,specifies: SCC-9523,SCC_Polarion/SCC-4889
+SCC-4297,Spezifikation Schleppkette,Low,,Accepted,2020-08-26 21:36,Enhancement Request,,SCC_Polarion/SCC-4297
+SCC-3919,Spezifikation_ePlan_Vorlagen,Highest,,Open,2020-05-22 07:23,Task,implements: SCC-3915,SCC_Polarion/SCC-3919
+SCC-3918,Anleitung ePlan Macros,Highest,,Open,2020-05-22 07:22,Task,implements: SCC-3915,SCC_Polarion/SCC-3918
+SCC-3917,Anleitung ePlan,Highest,,Open,2020-05-22 07:22,Task,implements: SCC-3915,SCC_Polarion/SCC-3917
+SCC-3527,Zutrittskonzept über FA mit VW im HRL,Medium,,Accepted,2020-04-06 15:45,Enhancement Request,,SCC_Polarion/SCC-3527
+SCC-2767,Produktkatalog: Kapitelanordnung anpassen,Highest,,Open,2020-03-03 20:47,Task,implements: SCC-2575,SCC_Polarion/SCC-2767
+SCC-2702,PC-Panels,Highest,,Accepted,2020-02-27 14:48,Enhancement Request,relates to: SCC-9653,SCC_Polarion/SCC-2702
+SCC-2577,EPLAN Vorlage,Highest,,In Progress,2020-02-05 13:48,Epic,"is related to: SCC-10155, is specified by: SCC-8040, is specified by: SCC-1842, is specified by: SCC-3915, is specified by: SCC-9226, is specified by: SCC-7521, is specified by: SCC-10433, is specified by: SCC-11180, is specified by: SCC-11193, is specified by: SCC-11206, is specified by: SCC-12525, is specified by: SCC-11175, is specified by: SCC-9897, is specified by: SCC-9598, is specified by: SCC-11190, is specified by: SCC-11185, is specified by: SCC-10429, is specified by: SCC-10430, is specified by: SCC-11191, is specified by: SCC-10428, is specified by: SCC-10432, is specified by: SCC-10431, is specified by: SCC-10156, is related to: SCC-6166",SCC_Polarion/SCC-2577
+SCC-2575,Produktkatalog,Highest,,In Progress,2020-02-05 13:44,Epic,"is implemented by: SCC-3945, is implemented by: SCC-2770, is implemented by: SCC-2768, is implemented by: SCC-2766, is implemented by: SCC-2769, is implemented by: SCC-2767, is specified by: SCC-11122, is specified by: SCC-11121, is specified by: SCC-11127",SCC_Polarion/SCC-2575
+SCC-2321,Beschreibung Inbetriebnahme SW,Highest,,In Progress,2019-12-09 09:04,Task,implements: SCC-2319,SCC_Polarion/SCC-2321
+SCC-2320,Beschreibung Projektierung SW,Highest,,In Progress,2019-12-09 09:03,Task,implements: SCC-2318,SCC_Polarion/SCC-2320
+SCC-2319,Inbetriebnahme-Handbuch SW,Highest,,Draft,2019-12-09 09:01,User Story,"specifies: SCC-9523, is implemented by: SCC-3794, is implemented by: SCC-2321",SCC_Polarion/SCC-2319
+SCC-2318,Projektierungs-Handbuch SW,Highest,,Draft,2019-12-09 09:01,User Story,"specifies: SCC-9523, is implemented by: SCC-3795, is implemented by: SCC-2320",SCC_Polarion/SCC-2318
+SCC-1871,GU- Angebotstexte,Highest,,In Progress,2019-11-10 11:43,Epic,"is specified by: SCC-12724, is specified by: SCC-10887, is specified by: SCC-10889, is specified by: SCC-12514, is specified by: SCC-10688",SCC_Polarion/SCC-1871
+SCC-1848,Schulungsunterlagen HW-Engineer,Lowest,,Draft,2019-11-10 11:14,User Story,specifies: SCC-6657,SCC_Polarion/SCC-1848
+SCC-1847,Schulungsunterlagen Kunde,Lowest,,Draft,2019-11-10 11:14,User Story,specifies: SCC-6657,SCC_Polarion/SCC-1847
+SCC-33,Option: Rad schleifen nicht möglich,Low,,Accepted,2019-06-04 09:54,Enhancement Request,,SCC_Polarion/SCC-33
