@@ -1,0 +1,43 @@
+https://dbdiagram.io/d
+---------------------------------------------
+
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+Table Epic {
+  id integer [primary key]
+  name String
+  sccId integer
+  childTracker String
+}
+
+Table Story {
+  id integer [primary key]
+  name String
+  sccId integer
+  parentTracker String
+  childTracker String
+}
+
+Table Task {
+  id integer [primary key]
+  name String
+  sccId integer
+  parentTracker String
+  childTracker String
+}
+
+Table Workload {
+  id integer [primary key]
+  trackerId integer
+  trackerName String
+  numberOfHoures integer
+  worker String
+}
+
+Ref: Task.parentTracker > Story.name
+Ref: Story.parentTracker > Epic.name
+Ref: Workload.trackerId > Epic.sccId
+Ref: Workload.trackerId > Story.sccId
+Ref: Workload.trackerId > Task.sccId
+

@@ -6,7 +6,7 @@ from Tracker import Tracker
 
 def createList():
     print("create all lists")
-    df = pd.read_csv('workitemsExport.csv')
+    df = pd.read_csv('data/workitemsExport.csv')
     # print(df.to_string())
 
     for ind in df.index:
@@ -16,7 +16,7 @@ def createList():
 
 def createLinkToParrent():
     print("create link to parrent tracker")
-    df = pd.read_csv('workitemsExport.csv')
+    df = pd.read_csv('data/workitemsExport.csv')
 
     # iterate all lines in csv file
     for ind in df.index:
@@ -39,7 +39,7 @@ def createLinkToParrent():
 
 def createLinkToChild():
     print("create link to child tracker")
-    df = pd.read_csv('workitemsExport.csv')
+    df = pd.read_csv('data/workitemsExport.csv')
 
     # iterate all lines in csv file
     for ind in df.index:
@@ -169,7 +169,7 @@ def getTupleLinkedTrackerId(linkString):
 
 def createEmployeeList():
     print("create all employee lists")
-    df = pd.read_csv('EXPORT.csv')
+    df = pd.read_csv('data/EXPORT.csv')
 
     for ind in df.index:
 

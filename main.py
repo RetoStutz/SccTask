@@ -1,10 +1,15 @@
-from Scc import Scc
+from code.controller import Controller
+from code.database.database import Database
 
-print("call main")
+if __name__ == "__main__":
 
-scc = Scc()
+    db_name = 'data/sccTracker'
 
-def findTrackerByName(epicName):
+    # create database
+    db = Database(db_name)
 
-    scc.getName(epicName)
+    # create application
+    app = Controller(db_name)
 
+    # start application
+    app.run()
