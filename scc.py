@@ -1,13 +1,12 @@
 import pandas as pd
 
-from Employee import Employee, Work
-from Tracker import Tracker
+from employee import Employee, Work
+from tracker import Tracker
 
 
 def createList():
     print("create all lists")
     df = pd.read_csv('data/workitemsExport.csv')
-    # print(df.to_string())
 
     for ind in df.index:
         Scc.trackerlist.append(Tracker(df[Scc.NAME_TRACKER_Title][ind], df[Scc.NAME_TRACKER_ID][ind],

@@ -1,9 +1,6 @@
 https://dbdiagram.io/d
 ---------------------------------------------
 
-// Use DBML to define your database structure
-// Docs: https://dbml.dbdiagram.io/docs
-
 Table Epic {
   id integer [primary key]
   name String

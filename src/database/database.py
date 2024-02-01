@@ -1,36 +1,9 @@
 import pandas as pd
 import sqlite3
+import re
 
-excel_file_path_tracker_list = "data/workitemExport.xlsx"
+excel_file_path_tracker_list = "data/workitemsExport.xlsx"
 excel_file_path_sap = "data/export.xlsx"
-
-column_mapping_task = {
-    'id': 'id',
-    'name': 'name',
-    'sccId': 'sccId',
-    'parentTracker': 'parentTracker',
-    'childTracker': 'childTracker'
-}
-
-column_mapping_function = {
-    'name': 'name'
-}
-
-
-def execute_query(con, cursor, query, params=None):
-    try:
-        if params:
-            cursor.execute(query, params)
-        else:
-            cursor.execute(query)
-
-        con.commit()
-
-        return True
-
-    except sqlite3.Error as e:
-        print(str(e))
-        return False
 
 
 def drop_all_tables(cursor):
@@ -47,79 +20,53 @@ def drop_all_tables(cursor):
             cursor.execute(drop_query)
 
 
-def import_data_from_excel_table(con, cursor, file_path, table_name, column_mapping):
+def import_data_from_polarion_task(con, cursor, file_path):
     try:
-        # Read data from Excel
+        # read data from excel
         excel_data = pd.read_excel(file_path, sheet_name=None)
 
         for sheet_name, data in excel_data.items():
             # Iterate over rows and insert into SQLite table
             for index, row in data.iterrows():
-                columns = ', '.join(column_mapping.keys())
-                values = ', '.join(['?'] * len(column_mapping))
 
-                query = f"INSERT INTO {table_name} ({columns}) VALUES ({values})"
-                params = tuple(row[column_mapping[col]] for col in column_mapping)
-                execute_query(con, cursor, query, params)
+                # Insert into database based on 'Type'
+                if row.get('Type') == 'User Story':
+                    parent_id = find_number_in_string(row.get('Linked Work Items'), "specifies:")
+                    cursor.execute(
+                        "INSERT INTO Story (sccId, name, parentSccId) VALUES (?, ?, ?)",
+                        (row['ID'], row['Title'], parent_id))
 
+                elif row.get('Type') == 'Epic':
+                    cursor.execute(
+                        "INSERT INTO Epic (sccId, name) VALUES (?, ?)",
+                        (row['ID'], row['Title']))
+
+                elif row.get('Type') == 'Task':
+                    parent_id = find_number_in_string(row.get('Linked Work Items'), "implements:")
+                    cursor.execute(
+                        "INSERT INTO Task (sccId, name, parentSccId) VALUES (?, ?, ?)",
+                        (row['ID'], row['Title'], parent_id))
+                else:
+                    print(f"{row.get('Type')} is not part of database")
+
+            con.commit()
     except Exception as e:
         print(f"Error during import data from {file_path}: {str(e)}")
 
 
-def import_data_from_excel_matrix(con, cursor, file_path, table_name, column_mapping, storeEntryToTable=1):
-    try:
-        # Read data from Excel
-        excel_data = pd.read_excel(file_path, sheet_name=None)
+def find_number_in_string(searchable_string, key_word):
+    if isinstance(searchable_string, str):
+        # Using regular expression to find numbers after the specified keyword
+        pattern = re.compile(fr'{key_word} (\S+)', re.IGNORECASE)
+        matches = pattern.findall(searchable_string)
 
-        for sheet_name, data in excel_data.items():
-
-            column_names = data.columns.tolist()
-
-            # Iterate over rows and insert into SQLite table
-            for _, row in data.iterrows():
-                function_name = row.iloc[0]
-
-                columns = ', '.join(column_mapping.keys())
-                values = ', '.join(['?'] * len(column_mapping))
-
-                # Iterate over non-first columns
-                for column_index, cell_value in enumerate(row[1:], start=1):
-                    if cell_value == storeEntryToTable:
-                        # Insert into SQLite table
-                        query = f"INSERT INTO {table_name} ({columns}) VALUES ({values})"
-                        params = (function_name, column_names[column_index])
-                        execute_query(con, cursor, query, params)
-
-    except Exception as e:
-        print(f"Error during import data from {file_path}: {str(e)}")
-
-
-def import_data_and_value_from_excel_matrix(con, cursor, file_path, table_name, column_mapping):
-    try:
-        # Read data from Excel
-        excel_data = pd.read_excel(file_path, sheet_name=None)
-
-        for sheet_name, data in excel_data.items():
-
-            column_names = data.columns.tolist()
-
-            # Iterate over rows and insert into SQLite table
-            for _, row in data.iterrows():
-                function_name = row.iloc[0]
-
-                columns = ', '.join(column_mapping.keys())
-                values = ', '.join(['?'] * len(column_mapping))
-
-                # Iterate over non-first columns
-                for column_index, cell_value in enumerate(row[1:], start=1):
-                    if cell_value > 0:
-                        # Insert into SQLite table
-                        query = f"INSERT INTO {table_name} ({columns}) VALUES ({values})"
-                        params = (function_name, column_names[column_index], cell_value)
-                        execute_query(con, cursor, query, params)
-
-    except Exception as e:
-        print(f"Error during import data from {file_path}: {str(e)}")
+        # Extracting the numbers
+        if matches:
+            return int(re.findall(r'\d+', matches[0])[0])  # Use \d+ to find all digits
+        else:
+            return 0
+    else:
+        return 0
 
 
 class Database:
@@ -136,100 +83,37 @@ class Database:
         if IMPORT_DATA_FROM_FILE:
             drop_all_tables(self.cursor)
 
-        # Create Table Crane
+        # Create Table Task
         self.cursor.execute('''
-            CREATE TABLE IF NOT EXISTS Crane (
-                craneId INTEGER PRIMARY KEY AUTOINCREMENT
-            )
-        ''')
-
-        # Create Table Generator
-        self.cursor.execute('''
-            CREATE TABLE IF NOT EXISTS Generator (
-                generatorId INTEGER PRIMARY KEY AUTOINCREMENT
-            )
-        ''')
-
-        # Create Table Zone
-        self.cursor.execute('''
-            CREATE TABLE IF NOT EXISTS Element (
-                elementId INTEGER PRIMARY KEY AUTOINCREMENT,
+            CREATE TABLE IF NOT EXISTS Task (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
                 name TEXT,
-                generatorId INTEGER,
-                FOREIGN KEY (generatorId) REFERENCES Generator(generatorId)
+                sccId INTEGER,
+                parentSccId INTEGER,
+                childSccId INTEGER,
+                FOREIGN KEY (parentSccId) REFERENCES Story(name)
             )
         ''')
 
-        # Create Table Typical
+        # Create Table Story
         self.cursor.execute('''
-            CREATE TABLE IF NOT EXISTS Typical (
-                typicalId INTEGER PRIMARY KEY AUTOINCREMENT,
+            CREATE TABLE IF NOT EXISTS Story (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
                 name TEXT,
-                elementId INTEGER,
-                elementName Text,
-                craneId INTEGER,
-                FOREIGN KEY (elementId) REFERENCES Element(elementId)
-                FOREIGN KEY (craneId) REFERENCES Crane(craneId)      
+                sccId INTEGER,
+                parentSccId INTEGER,
+                childSccId INTEGER,
+                FOREIGN KEY (parentSccId) REFERENCES Story(name)
             )
         ''')
 
-        # Create Table Function
+        # Create Table Epic
         self.cursor.execute('''
-            CREATE TABLE IF NOT EXISTS Function (
-                functionId INTEGER PRIMARY KEY AUTOINCREMENT,
+            CREATE TABLE IF NOT EXISTS Epic (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
                 name TEXT,
-                FOREIGN KEY (functionId) REFERENCES FunctionTypical(functionId)
-            )
-        ''')
-
-        # Create Table Bmk
-        self.cursor.execute('''
-            CREATE TABLE IF NOT EXISTS Bmk (
-                bmkId INTEGER PRIMARY KEY AUTOINCREMENT,
-                name TEXT,
-                description TEXT,
-                plcName TEXT,
-                plcCommentDe TEXT,
-                plcCommentEn TEXT,
-                polarionPage TEXT
-            )
-        ''')
-
-        # Create Table BmkFunction
-        self.cursor.execute('''
-            CREATE TABLE IF NOT EXISTS BmkFunction (
-                bmkFunctionId INTEGER PRIMARY KEY AUTOINCREMENT,
-                bmkName TEXT,
-                bmkId INTEGER,
-                functionName TEXT,
-                functionId INTEGER,
-                FOREIGN KEY (bmkId) REFERENCES Bmk(bmkId),
-                FOREIGN KEY (functionId) REFERENCES Function(functionId)
-            )
-        ''')
-
-        # Create Table ExcludeFunction
-        self.cursor.execute('''
-            CREATE TABLE IF NOT EXISTS ExcludeFunction (
-                  excludeFunctionId INTEGER PRIMARY KEY AUTOINCREMENT,
-                  functionId  INTEGER,
-                  functionName TEXT,
-                  nonCompatibleFunctionId INTEGER,
-                  nonCompatibleFunctionName TEXT,
-                  FOREIGN KEY (functionId) REFERENCES Function(functionId)
-            )
-        ''')
-
-        # Create Table FunctionTypical
-        self.cursor.execute('''
-            CREATE TABLE IF NOT EXISTS FunctionTypical (
-                  functionTypicalId INTEGER PRIMARY KEY AUTOINCREMENT,
-                  functionId INTEGER,
-                  functionName TEXT,
-                  typicalId INTEGER,
-                  typicalName TEXT,
-                  selection INTEGER,
-                  FOREIGN KEY (typicalId) REFERENCES Typical(typicalId)
+                sccId INTEGER,
+                childSccId INTEGER
             )
         ''')
 
@@ -238,21 +122,7 @@ class Database:
 
         # import data from excel tables
         if IMPORT_DATA_FROM_FILE:
-            import_data_from_excel_table(self.conn, self.cursor, excel_file_path_bmk, "Bmk", column_mapping_bmk)
-            import_data_from_excel_table(self.conn, self.cursor, excel_file_path_function, "Function",
-                                         column_mapping_function)
-            import_data_from_excel_table(self.conn, self.cursor, excel_file_path_typical, "Typical",
-                                         column_mapping_typical)
-            import_data_from_excel_table(self.conn, self.cursor, excel_file_path_element, "Element",
-                                         column_mapping_element)
-
-            import_data_from_excel_matrix(self.conn, self.cursor, excel_file_path_excludeFunction, "ExcludeFunction",
-                                          column_mapping_excludeFunction, 0)
-            import_data_from_excel_matrix(self.conn, self.cursor, excel_file_path_bmk_function, "BmkFunction",
-                                          column_mapping_bmkFunction, 1)
-            import_data_and_value_from_excel_matrix(self.conn, self.cursor, excel_file_path_function_typical,
-                                                    "FunctionTypical",
-                                                    column_mapping_functionTypical)
+            import_data_from_polarion_task(self.conn, self.cursor, excel_file_path_tracker_list)
 
         # close connection
         self.conn.close()
