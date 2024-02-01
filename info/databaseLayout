@@ -1,6 +1,5 @@
 https://dbdiagram.io/d
 ---------------------------------------------
-
 Table Epic {
   id integer [primary key]
   name String
@@ -26,15 +25,14 @@ Table Task {
 
 Table Workload {
   id integer [primary key]
-  trackerId integer
-  trackerName String
-  numberOfHoures integer
+  sccId integer
+  numberOfHours integer
   worker String
 }
 
 Ref: Task.parentTracker > Story.name
 Ref: Story.parentTracker > Epic.name
-Ref: Workload.trackerId > Epic.sccId
-Ref: Workload.trackerId > Story.sccId
-Ref: Workload.trackerId > Task.sccId
+Ref: Workload.sccId > Epic.sccId
+Ref: Workload.sccId > Story.sccId
+Ref: Workload.sccId > Task.sccId
 
